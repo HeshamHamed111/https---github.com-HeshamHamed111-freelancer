@@ -1,5 +1,4 @@
-import { CalendarIcon, DragHandleIcon, MdReceipt } from '@chakra-ui/icons'
-import { Box, Flex, Img, List, ListIcon, ListItem, Text } from '@chakra-ui/react'
+import { Box, Flex, Img, List, ListItem, Text } from '@chakra-ui/react'
 import { faBedPulse, faBookOpen, faBox, faCalendarDays, faCalendarMinus, faChartLine, faGaugeHigh, faMemory } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'

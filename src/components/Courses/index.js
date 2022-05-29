@@ -1,54 +1,25 @@
-import { ViewIcon, LockIcon, UnlockIcon } from '@chakra-ui/icons'
-import { Box, Flex, Icon, Img, Progress, Spacer, Text } from '@chakra-ui/react'
-import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import pdf from "../../images/pdf.png"
+import rar from "../../images/rar.jpg"
+import file from "../../images/file.jpg"
+import video from "../../images/video.png"
+import documents from "../../images/documents.png"
+import quiz from "../../images/quiz.png"
 
 function Courses(props) {
    
   return (
-    <Flex minWidth='max-content' alignItems='center' gap='2' className='pl-4 pr-2 mb-12'>
-        <Box gap="2">
-            <Img src={props.src} alt={props.alt} w="12px" h="14px" />
-        </Box>
-        <Box gap="7" w="250px">
-            <Text fontSize="11px" fontWeight="bold">
-                {props.couserName}
-            </Text>
-        </Box>
-   
-        <Box gap="6" w="550px">
-            <Text color="#CCC" fontSize="10px">
-                {props.upload}
-            </Text>
-            <Text color="#000" fontSize="11px" >{props.date}</Text>
-        </Box>
-        <Box gap="2">
-        {props.upload && 
-        <Box>
-            <Text>
-            <Progress value={props.valueProgress} h="5px" w="120px" borderRadius="15px"/>
-            </Text>
-            <Text className="mt-2">
-            <Flex>
-            <Icon as={ViewIcon} color="#888" className="mr-1" fontSize="13px"/>
-            <Text fontSize="10px">{props.valueProgress || props.valueProgress !== 0 ?  `Views: ${props.views} / ${props.viewsAll}` : 'Un Published Yet'}</Text>
-            </Flex>
-            </Text>
-        </Box>    
-        }
-        </Box>
-        <Spacer />
-        <Box gap="2" className="mb-2">
-          <Text>
-          {props.views ?
-            <Icon as={UnlockIcon} color="green" className="mr-3 mb-1" fontSize="15px"/> :
-            <Icon as={LockIcon} color="gray" className="mr-3 mb-1" fontSize="15px"/>
-        }
-          <FontAwesomeIcon icon={faEllipsisVertical} className='mr-3' color='gray' />
-          </Text>  
-        </Box>
-    </Flex>
+    <>
+    <Courses src={pdf} couserName="Course Material 1" upload="Upload Date :" date="April 1 , 2021" valueProgress={80} views="660" viewsAll="880"/>
+    <Courses src={rar} couserName="Course Material 2" upload="Upload Date :" date="April 1 , 2021" valueProgress={0} views="" />
+    <Courses src={file} couserName="Course Material 3" upload="Upload Date :" date="April 1 , 2021" valueProgress={0} />    
+    <Courses src={video} couserName="Video 1" upload="Upload Date :" date="April 1 , 2021" valueProgress={85} views="700" viewsAll="800" />
+    <Courses src={video} couserName="Video 2" upload="Upload Date :" date="April 1 , 2021" valueProgress={88} views="720" viewsAll="800" />
+    <Courses src={documents} couserName="Assignment 1" />
+    <Courses src={documents} couserName="Assignment 2" />
+    <Courses src={quiz} couserName="Quiz 1" />
+    <Courses src={quiz} couserName="Quiz 2" />
+    </>
   )
 }
 
