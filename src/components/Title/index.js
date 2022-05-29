@@ -10,7 +10,7 @@ function Title(props) {
         <Flex minWidth='max-content' alignItems='center' gap='2'>
             <Text className="p-3 py-4" color='black' fontWeight={'bold'}>
             <Icon as={DragHandleIcon} color='gray' className="mr-2" />
-              {props.text}            
+              {props.text}             
             </Text>
             <Spacer />
             <Text>
