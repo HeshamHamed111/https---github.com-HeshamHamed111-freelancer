@@ -22,7 +22,7 @@ function App() {
     <Box w="20%">
     <MenuBar />
     </Box>
-    <Box w="80%">
+    <Box w="80%"> 
     <Header />
     
       <ModelButton />
