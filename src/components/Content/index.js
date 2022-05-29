@@ -7,7 +7,7 @@ function Lessons() {
   return (
     <Flex minWidth='max-content' alignItems='center' gap='2' className='py-5 px-2'>
         <Text fontWeight='bold'>
-            Lessons
+            Lessons 
         </Text>
         <Spacer />
         <Text>
