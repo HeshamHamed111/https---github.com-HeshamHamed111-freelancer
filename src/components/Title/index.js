@@ -5,7 +5,7 @@ import {faEllipsisVertical} from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 
 function Title() {
-  return (
+  return ( 
     <Box bg="#ededed">
         <Flex minWidth='max-content' alignItems='center' gap='2'>
             <Text className="p-3 py-4" color='black' fontWeight={'bold'}>

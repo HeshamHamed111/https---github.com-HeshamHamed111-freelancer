@@ -13,7 +13,7 @@ import documents from "./images/documents.png"
 import quiz from "./images/quiz.png"
 import MenuBar from './components/MenuBar';
 
-
+ 
 
 function App() {
   return (

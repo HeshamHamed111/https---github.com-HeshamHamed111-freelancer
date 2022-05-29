@@ -4,7 +4,7 @@ import { faBedPulse, faBookOpen, faBox, faCalendarDays, faCalendarMinus, faChart
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import ss from '../../images/SS.png'
-function MenuBar() {
+function MenuBar() { 
   return (
     <Box className="menu pt-10" with="100%" textAlign="center">
     <Box className="mb-10">
