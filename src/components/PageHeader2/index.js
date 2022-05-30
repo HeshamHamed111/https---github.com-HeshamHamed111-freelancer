@@ -8,7 +8,7 @@ import {
 
 function PageHeader2() {
   return (
-    <>
+    <React.Fragment>
             <Breadcrumb
             mt={10}
             spacing="8px"
@@ -28,7 +28,7 @@ function PageHeader2() {
             </BreadcrumbLink>
             </BreadcrumbItem>
         </Breadcrumb>
-    </>
+    </React.Fragment>
   )
 }
 

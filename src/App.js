@@ -23,8 +23,8 @@ function App() {
         </Box>
 
           </Flex>  
-    
-    </Router>
+          </Router>
+   
       </div>
   );
 }

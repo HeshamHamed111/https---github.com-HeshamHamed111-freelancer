@@ -7,7 +7,7 @@ import Title from '../components/Title';
  
 function Page2() {
   return (
-    <>
+    <React.Fragment>
     <Flex minWidth="max-content" alignItems="center" gap="2">
     <Box p="2">
       <PageHeader2 />
@@ -19,7 +19,7 @@ function Page2() {
   </Flex>
   <Title text="Discussion rooms"/>
   <PageCards2 />
-    </>
+    </React.Fragment>
   )
 }
 

@@ -4,7 +4,7 @@ import { Avatar, AvatarGroup } from '@chakra-ui/react';
 
 function Card() {
   return (
-    <>
+    <React.Fragment>
     <Box
     maxW="sm" 
     borderWidth="1px"
@@ -127,7 +127,7 @@ function Card() {
       </Box>
     </Flex>
   </Box>
-    </>
+    </React.Fragment>
   )
 }
 

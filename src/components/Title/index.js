@@ -6,7 +6,7 @@ import React from 'react'
 
 function Title(props) {
   return ( 
-    <Box bg="#ededed">
+    <Box bg="#ededed" className="my-7">
         <Flex minWidth='max-content' alignItems='center' gap='2'>
             <Text className="p-3 py-4" color='black' fontWeight={'bold'}>
             <Icon as={DragHandleIcon} color='gray' className="mr-2" />
